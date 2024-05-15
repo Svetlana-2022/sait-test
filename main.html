@@ -31,6 +31,8 @@
 </div>
 
 <button id="copy">Копировать в буфер</button>
+<br>
+<button id="print-button">Распечатать</button>
 
 <style>
     p {
@@ -40,6 +42,7 @@
         margin-top: 40px;
     }
     button {
+      margin-top: 20px;
         background-color: rgb(248, 172, 72);
         padding: 20px;
     }
@@ -48,6 +51,8 @@
 <script>
   const btnCopy = document.getElementById('copy');
   const copyText = document.getElementById('copyText');
+  const printButton = document.getElementById('print-button');
+
 function updateText() {
   const initials = document.getElementById('initials').value;
   
@@ -80,6 +85,9 @@ btnCopy.addEventListener('click', () => {
   sysInput.select();
   document.execCommand('copy');
   document.body.removeChild(sysInput);
+})
+printButton.addEventListener('click', function() {
+  window.print();
 })
 </script>
 </body>
