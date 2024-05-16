@@ -1,0 +1,33 @@
+.content {
+    inline-size: 100%;
+    block-size: 100vh;
+    background-image: linear-gradient(to top left, #271ed8, #265ed8);
+    /* background-color: #265ed8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.content__num {
+    position: absolute;
+    inline-size: 50px;
+    block-size: 30px;
+    background-color: rgba(165, 176, 185, 0.8);
+    border-radius: 5px;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.content__container {
+    display: flex;
+}
+h1 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 42px;
+}
+.content__span {
+    color: #ffa;
+}
