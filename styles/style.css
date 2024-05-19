@@ -1,10 +1,13 @@
+body {
+    margin: 0;
+}
 .content {
     inline-size: 100%;
     block-size: 100vh;
     background-image: url(../image/nac-contant.jpg);
     background-position: right;
     background-size: cover;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -31,32 +34,49 @@ p {
 }
 .content__container {
     display: flex;
+    flex-direction: row;
 }
 .content__icon {
     /* inline-size: 140px; */
     inline-size: 10em;
+    align-self: center;
 }
 .content__text {
     align-self: center;
 }
-h1 {
+h1 {   
     margin: 0;
-    color: #e2dfdf;
-    text-shadow: 0 0 15px #61d4f7;
-    font-family: 'Open Sans', sans-serif;
-    /* font-size: 2.5em; */
-    font-size: clamp(1.75rem, 1.5026rem + 1.0554vw, 2.5rem);
+    color: #ffffff;
+    text-shadow: 
+    0 0 15px #61d4f7,
+    0 0 20px #5ad3f8;
+    font-family: 'Open Sans';
+    font-size: clamp(1.5rem, 1.129rem + 1.5831vw, 2.625rem);
     font-style: normal;
     font-weight: 100;
     line-height: 0.8;
-    letter-spacing: 0.3em; 
-    align-self: center;
+    letter-spacing: 0.2em;
 }
 .content__span {
     color: #e2dfdf;
     text-shadow: 0 0 5px #72d5f3;
     opacity: 0.6;
-    font-size: clamp(1.375rem, 1.2101rem + 0.7036vw, 1.875rem);
+    font-size: clamp(1rem, 0.7526rem + 1.0554vw, 1.75rem);
     line-height: 0.8;
     letter-spacing: 0.67em;
+}
+@media screen and (max-width: 640px) {
+    .content__num {
+        padding: 10px 15px;
+    }
+    .content__container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    h1 {
+        text-align: center;
+    }
+    .content__span {
+        text-align: center;
+    }
 }
