@@ -1,28 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма</title>
+<link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    <section>
-        <a href="main.html">Форма</a>
+<body>  
+    <h1>Конструктор</h1>
+    <section class="section-1 cover">
+        <form>
+            <h3>Адрес сайта, на котором собираются персональные данные:</h3>
+            <button class="button-adress">http://</button>
+            <input type="text" id="adress" oninput="updateText()" placeholder="site.com">
+            <br>
+            <h4>ФИО или название организации:</h4>
+            <small>Указывайте данные в творительном падеже. Например, Ивановым Иваном Ивановичем</small>
+            <br>
+            <input type="text" id="initials" oninput="updateText()" placeholder="Ивановым Иваном Ивановичем"> 
+            <h4>Email оператора персональных данных (владельца сайта) для связи:</h4>
+            <input type="email" id="email" oninput="updateText()" placeholder="email@site.com">
+        </form>
     </section>
-    <section class="content">
-        <div class="content__num">
-            <p>1 из 5</p>
-        </div>
-        <div class="content__container">
-            <img class="content__icon" src="./image/nac-icon-2.png" alt="icon">
-            <div class="content__text">
-                <h1>НАЦИОНАЛЬНЫЙ ЦЕНТР</h1>
-                <p class="content__span">цифровых технологий</p>
-            </div>
+    <section class="section-2 cover">
+        <h3>Образец</h3>
+        <div class="section-2__sample sample">
+            <h5>1.Общие положения</h5>
+            <p>
+                Настоящая политика обработки персональных данных составлена в соответствии 
+                с требованиями Федерального закона от 27.07.2006. № 152-ФЗ «О персональных 
+                данных» (далее — Закон о персональных данных) и определяет порядок обработки 
+                персональных данных и меры по обеспечению безопасности персональных данных, 
+                предпринимаемые <span class="section-2__initials span">Ивановым Иваном Ивановичем</span> 
+                (далее — Оператор).
+            </p>
+            <ul>
+                <li>
+                    1.1. Оператор ставит своей важнейшей целью и условием осуществления 
+                    своей деятельности соблюдение прав и свобод человека и гражданина при 
+                    обработке его персональных данных, в том числе защиты прав на 
+                    неприкосновенность частной жизни, личную и семейную тайну.
+                </li>
+                <li>
+                    1.2. Настоящая политика Оператора в отношении обработки персональных 
+                    данных (далее — Политика) применяется ко всей информации, которую 
+                    Оператор может получить о посетителях веб-сайта 
+                    <span class="section-2__adress span">http://site.com.</span>
+                </li>
+            </ul>
+            <h5>8. Порядок сбора</h5>
+            <p>
+                Безопасность персональных данных, которые обрабатываются Оператором, 
+                обеспечивается путем реализации правовых, организационных и технических 
+                мер, необходимых для выполнения в полном объеме требований действующего 
+                законодательства в области защиты персональных данных.
+            </p>
+            <ul>
+                <li>
+                    8.1. Оператор обеспечивает сохранность персональных данных и 
+                    принимает все возможные меры, исключающие доступ к персональным 
+                    данным неуполномоченных лиц.
+                </li>
+                <li>
+                    8.2. Персональные данные Пользователя никогда, ни при каких 
+                    условиях не будут переданы третьим лицам, за исключением случаев, 
+                    связанных с исполнением действующего законодательства либо в случае, 
+                    если субъектом персональных данных дано согласие Оператору на 
+                    передачу данных третьему лицу для исполнения обязательств по 
+                    гражданско-правовому договору.
+                </li>
+                <li>
+                    8.3. В случае выявления неточностей в персональных данных, 
+                    Пользователь может актуализировать их самостоятельно, путем 
+                    направления Оператору уведомление на адрес электронной почты Оператора 
+                    <span class="section-2__email span">site.com</span> с пометкой 
+                    «Актуализация персональных данных».
+                </li>
+            </ul>
         </div>
     </section>
-    
+
+    <script>
+
+        function updateText() {
+            const adress = document.getElementById('adress').value;
+            const initials = document.getElementById('initials').value;
+            const email = document.getElementById('email').value;
+            const sectionInitials = document.querySelector('.section-2__initials');
+            const sectionAdress = document.querySelector('.section-2__adress');
+            const sectionEmail = document.querySelector('.section-2__email');
+         
+            sectionInitials.textContent = initials;
+            sectionAdress.textContent = adress;
+            sectionEmail.textContent = email;
+        }
+
+    </script>
 </body>
 </html>

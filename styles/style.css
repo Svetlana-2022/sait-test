@@ -1,70 +1,41 @@
 body {
     margin: 0;
+    background-color: #eee;
+    padding: 40px;
+} 
+h1 {
+    font-size: 40px;
+    text-align: center;
 }
-.content {
-    inline-size: 100%;
-    block-size: 100vh;
-    background-image: url(../image/nac-contant.jpg);
-    background-position: right;
-    background-size: cover;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 100;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.cover {
+    background-color: #fff;
+    padding: 20px;
+    margin-block-end: 20px;
+}
+.button-adress {
+    min-inline-size: 5%;
+    padding: 8px;
+    cursor: pointer;
+} 
+input {
+    inline-size: 90%;
+    padding: 8px;
+}
+input:first-of-type {
+    inline-size: 85%;
+}
+.sample {
+    border: solid 2px #eee;
+    padding: 0 20px 20px;
+}
+.span {
+    border-bottom: 1.5px dotted #fa8669;
+    background-color: #fcf8e3;
 }
 
-.content__num {
-    position: absolute;
-    padding: 15px 25px;
-    background-color: rgba(120, 130, 139, 0.8);
-    box-shadow: inset 0px 0px 6px 2px rgba(63, 56, 56, 0.8);
-    color: #3f3d3d;
-    text-shadow: 1px 1px 4px #3f3d3d;
-    border-radius: 15px;
-    top: 60px;
-    left: 40px;
-    font-size: clamp(1.375rem, 1.2101rem + 0.7036vw, 1.875rem);
-}
-p {
-    margin: 0;
-}
-.content__container {
-    display: flex;
-    flex-direction: row;
-}
-.content__icon {
-    /* inline-size: 140px; */
-    inline-size: 10em;
-    align-self: center;
-}
-.content__text {
-    align-self: center;
-}
-h1 {   
-    margin: 0;
-    color: #ffffff;
-    text-shadow: 
-    0 0 15px #61d4f7,
-    0 0 20px #5ad3f8;
-    font-family: 'Open Sans';
-    font-size: clamp(1.5rem, 1.129rem + 1.5831vw, 2.625rem);
-    font-style: normal;
-    font-weight: 100;
-    line-height: 0.8;
-    letter-spacing: 0.2em;
-}
-.content__span {
-    color: #e2dfdf;
-    text-shadow: 0 0 5px #72d5f3;
-    opacity: 0.6;
-    font-size: clamp(1rem, 0.7526rem + 1.0554vw, 1.75rem);
-    line-height: 0.8;
-    letter-spacing: 0.67em;
-}
+
+
+
 @media screen and (max-width: 640px) {
     .content__num {
         padding: 10px 15px;
