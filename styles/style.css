@@ -32,6 +32,12 @@ input:first-of-type {
     border-bottom: 1.5px dotted #fa8669;
     background-color: #fcf8e3;
 }
+.button-copy {
+    margin-top: 20px;
+    background-color: rgb(248, 172, 72);
+    padding: 20px;
+    cursor: pointer;
+}
 
 
 

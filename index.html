@@ -24,7 +24,7 @@
     </section>
     <section class="section-2 cover">
         <h3>Образец</h3>
-        <div class="section-2__sample sample">
+        <div class="section-2__sample sample copy-text" id="copyText">
             <h5>1.Общие положения</h5>
             <p>
                 Настоящая политика обработки персональных данных составлена в соответствии 
@@ -78,10 +78,13 @@
                 </li>
             </ul>
         </div>
+        <button id="copy" class="button-copy">Копировать в буфер</button>
     </section>
 
     <script>
-
+        const btnCopy = document.getElementById('copy');
+        const copyText = document.querySelector('.copy-text');
+        
         function updateText() {
             const adress = document.getElementById('adress').value;
             const initials = document.getElementById('initials').value;
@@ -94,6 +97,15 @@
             sectionAdress.textContent = adress;
             sectionEmail.textContent = email;
         }
+
+        btnCopy.addEventListener('click', () => {
+            const sysInput =document.createElement('input');
+            sysInput.setAttribute('value', copyText.textContent);
+            document.body.appendChild(sysInput);
+            sysInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(sysInput);
+        })
 
     </script>
 </body>
