@@ -3,80 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Форма</title>
+<title>Форма оферты</title>
 <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>  
     <h1>Конструктор</h1>
+    <h2>Форма оферты</h2>
     <section class="section-1 cover">
         <form>
-            <h3>Адрес сайта, на котором собираются персональные данные:</h3>
-            <button class="button-adress">http://</button>
-            <input type="text" id="adress" oninput="updateText()" placeholder="site.com">
+            <label for="initials">Наименование НКО:</label><br>
+            <input type="text" id="initials" oninput="updateText()" placeholder='АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ «НАЦИОНАЛЬНЫЙ ЦЕНТР ЦИФРОВЫХ ТЕХНОЛОГИЙ»'>
             <br>
-            <h4>ФИО или название организации:</h4>
-            <small>Указывайте данные в творительном падеже. Например, Ивановым Иваном Ивановичем</small>
+            <label for="job">Должность руководителя НКО или лица, имеющего права действовать от имени НКО без доверенности:</label><br>
+            <input type="text" id="job" oninput="updateText()" placeholder="Директор:">
             <br>
-            <input type="text" id="initials" oninput="updateText()" placeholder="Ивановым Иваном Ивановичем"> 
-            <h4>Email оператора персональных данных (владельца сайта) для связи:</h4>
-            <input type="email" id="email" oninput="updateText()" placeholder="email@site.com">
-        </form>
+            <label for="supervisor">ФИО руководителя НКО:</label><br>
+            <input type="text" id="supervisor" oninput="updateText()" placeholder="Абдрашитов Антон Ришатович,">
+            <br>
+            <label for="recipient">Получатель пожертвования:</label><br>
+            <input type="text" id="recipient" oninput="updateText()" placeholder="«Получатель пожертвования» - «АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ «НАЦИОНАЛЬНЫЙ ЦЕНТР ЦИФРОВЫХ ТЕХНОЛОГИЙ».">
+            <br>
+            <label for="req">Реквизиты Получателя пожертвования:</label><br>
+            <input type="text" id="req" oninput="updateText()" placeholder="">
+            <br>
+            <label for="adress">Юридический адрес НКО:</label><br>
+            <input type="text" id="adress" oninput="updateText()" placeholder="Индекс, Область/край/республика/, город, улица, дом, квартира/помещение">
+            <br>
+            <label for="inn">ИНН:</label><br>
+            <input type="text" id="inn" oninput="updateText()" placeholder="">
+            <br>
+            <label for="kpp">КПП:</label><br>
+            <input type="text" id="kpp" oninput="updateText()" placeholder="">
+            <br>
+            <label for="ogrn">ОГРН:</label><br>
+            <input type="text" id="ogrn" oninput="updateText()" placeholder="">
+            <br>
+            <label for="name-bank">Название банка, где открыт счет:</label><br>
+            <input type="text" id="name-bank" oninput="updateText()" placeholder="" maxlength="20">
+            <br>
+            <label for="number">Номер расчётного счета:</label><br>
+            <input type="text" id="number" oninput="updateText()" placeholder="">
+            <br>
+            <label for="bik">БИК банка:</label><br>
+            <input type="text" id="bik" oninput="updateText()" placeholder="">
+            <br>
+            <label for="check">Корреспондентский счет:</label><br>
+            <input type="text" id="check" oninput="updateText()" placeholder="">
+            <br>
+            <label for="phone">Номер телефона НКО:</label><br>
+            <input type="text" id="phone" oninput="updateText()" placeholder="">
+            <br>
+            <label for="email">Адрес электронной почты НКО:</label><br>
+            <input type="email" id="email" oninput="updateText()" placeholder="info@ncdt.ru">
+          </form>
     </section>
     <section class="section-2 cover">
         <h3>Образец</h3>
         <div class="section-2__sample sample copy-text" id="copyText">
-            <h5>1.Общие положения</h5>
+            <h4>Публичная оферта о заключении договора пожертвования</h4>
+            <h2><span class="section-2__initials span">АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ «НАЦИОНАЛЬНЫЙ ЦЕНТР ЦИФРОВЫХ ТЕХНОЛОГИЙ»</span>,</h2>
             <p>
-                Настоящая политика обработки персональных данных составлена в соответствии 
-                с требованиями Федерального закона от 27.07.2006. № 152-ФЗ «О персональных 
-                данных» (далее — Закон о персональных данных) и определяет порядок обработки 
-                персональных данных и меры по обеспечению безопасности персональных данных, 
-                предпринимаемые <span class="section-2__initials span">Ивановым Иваном Ивановичем</span> 
-                (далее — Оператор).
+                <span class="section-2__job span">Директор</span>:<span class="section-2__supervisor span">Абдрашитов Антон Ришатович</span>, 
             </p>
+            <h5>предлагает гражданам сделать пожертвование на ниже приведенных условиях:</h5>
             <ul>
                 <li>
-                    1.1. Оператор ставит своей важнейшей целью и условием осуществления 
-                    своей деятельности соблюдение прав и свобод человека и гражданина при 
-                    обработке его персональных данных, в том числе защиты прав на 
-                    неприкосновенность частной жизни, личную и семейную тайну.
+                    1. Общие положения
                 </li>
                 <li>
-                    1.2. Настоящая политика Оператора в отношении обработки персональных 
-                    данных (далее — Политика) применяется ко всей информации, которую 
-                    Оператор может получить о посетителях веб-сайта 
-                    <span class="section-2__adress span">http://site.com.</span>
+                    1.1. В соответствии с п. 2 ст. 437 Гражданского кодекса Российской Федерации данное предложение 
+                    является публичной офертой (далее – Оферта).
+                </li>
+                <li>
+                    1.2. В настоящей Оферте употребляются термины, имеющие следующее значение:
+                    <ul>
+                        <li>
+                            «Пожертвование» - «дарение вещи или права в общеполезных целях»;
+                        </li>
+                        <li>
+                            «Жертвователь» - «граждане, делающие пожертвования»;
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    1.2.1. <span class="section-2__recipient span">«Получатель пожертвования» - «АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ «НАЦИОНАЛЬНЫЙ ЦЕНТР ЦИФРОВЫХ ТЕХНОЛОГИЙ»</span>.
+                </li>
+                <li>
+                    1.3. Оферта действует бессрочно с момента размещения ее на сайте Получателя пожертвования.
+                </li>
+                <li>
+                    1.4. Получатель пожертвования вправе отменить Оферту в любое время путем удаления ее со страницы своего сайта в Интернете.
+                </li>
+                <li>
+                    1.5. Недействительность одного или нескольких условий Оферты не влечет недействительность всех остальных условий Оферты.
+                </li>
+                <li>
+                    2. Существенные условия договора пожертвования:
+                </li>
+                <li>
+                    2.1. Пожертвование используется на содержание и ведение уставной деятельности Получателя пожертвования.
+                </li>
+                <li>
+                    2.2. Сумма пожертвования определяется Жертвователем.
+                </li>
+                <li>
+                    3. Порядок заключения договора пожертвования:
+                </li>
+                <li>
+                    3.1. В соответствии с п. 3 ст. 434 Гражданского кодекса Российской Федерации договор пожертвования заключается
+                     в письменной форме путем акцепта Оферты Жертвователем.
+                </li>
+                <li>
+                    3.2. Оферта может быть акцептована путем перечисления Жертвователем денежных средств в пользу Получателя 
+                    пожертвования платежным поручением по реквизитам, указанным в разделе 5 Оферты, с указанием в строке 
+                    «назначение платежа»: «пожертвование на содержание и ведение уставной деятельности», а также с использованием 
+                    пластиковых карт, электронных платежных систем и других средств и систем, позволяющих Жертвователю перечислять 
+                    Получателю пожертвования денежных средств.
+                </li>
+                <li>
+                    3.3. Совершение Жертвователем любого из действий, предусмотренных п. 3.2. Оферты, считается акцептом Оферты в 
+                    соответствии с п. 3 ст. 438 Гражданского кодекса Российской Федерации.
+                </li>
+                <li>
+                    3.4. Датой акцепта Оферты – датой заключения договора пожертвования является дата поступления пожертвования 
+                    в виде денежных средств от Жертвователя на расчетный счет Получателя пожертвования.
+                </li>
+                <li>
+                    4. Заключительные положения:
+                </li>
+                <li>
+                    4.1. Совершая действия, предусмотренные настоящей Офертой, Жертвователь подтверждает, что ознакомлен с 
+                    условиями Оферты, целями деятельности Получателя пожертвования, осознает значение своих действий и 
+                    имеет полное право на их совершение, полностью и безоговорочно принимает условия настоящей Оферты.
+                </li>
+                <li>
+                    4.2. Настоящая Оферта регулируется и толкуется в соответствии с действующим российском законодательством.
+                </li>
+                <li>
+                    5. Подпись и реквизиты Получателя пожертвования
                 </li>
             </ul>
-            <h5>8. Порядок сбора</h5>
+            <h2><span class="section-2__initials span">АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ «НАЦИОНАЛЬНЫЙ ЦЕНТР ЦИФРОВЫХ ТЕХНОЛОГИЙ»</span></h2>
             <p>
-                Безопасность персональных данных, которые обрабатываются Оператором, 
-                обеспечивается путем реализации правовых, организационных и технических 
-                мер, необходимых для выполнения в полном объеме требований действующего 
-                законодательства в области защиты персональных данных.
+                Наименование:<br>
+                <span class="section-2__initials span">АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ «НАЦИОНАЛЬНЫЙ ЦЕНТР ЦИФРОВЫХ ТЕХНОЛОГИЙ»</span>
             </p>
-            <ul>
-                <li>
-                    8.1. Оператор обеспечивает сохранность персональных данных и 
-                    принимает все возможные меры, исключающие доступ к персональным 
-                    данным неуполномоченных лиц.
-                </li>
-                <li>
-                    8.2. Персональные данные Пользователя никогда, ни при каких 
-                    условиях не будут переданы третьим лицам, за исключением случаев, 
-                    связанных с исполнением действующего законодательства либо в случае, 
-                    если субъектом персональных данных дано согласие Оператору на 
-                    передачу данных третьему лицу для исполнения обязательств по 
-                    гражданско-правовому договору.
-                </li>
-                <li>
-                    8.3. В случае выявления неточностей в персональных данных, 
-                    Пользователь может актуализировать их самостоятельно, путем 
-                    направления Оператору уведомление на адрес электронной почты Оператора 
-                    <span class="section-2__email span">site.com</span> с пометкой 
-                    «Актуализация персональных данных».
-                </li>
-            </ul>
+            <p>
+                Юридический адрес<br>
+                <span class="section-2__adress span">141401, Московская область, г Химки, ул Кудрявцева, д. 11, кв. 133</span>
+            </p>
+            <p>
+                ИНН: <span class="section-2__inn span">5047267305</span>
+            </p>
+            <p>
+                КПП: <span class="section-2__kpp span">504701001</span>
+            </p>
+            <p>
+                ОГРН: <span class="section-2__ogrn span">1225000096232 от 1 сентября 2022 г.</span>
+            </p>
+            <p>
+                Расчётный счёт: <span class="section-2__number span">40703810401500002231</span>
+            </p>
+            <p>
+                Название банка: <span class="section-2__name-bank span">ООО "Банк Точка"</span>
+            </p>
+            <p>
+                БИК: <span class="section-2__bik span">044525104</span>
+            </p>
+            <p>
+                Корреспондентский счёт: <span class="section-2__check span">40703810401500002231</span>
+            </p>
+            <p>
+                Контактные данные: <span class="section-2__email span">info@ncdt.ru</span>, <span class="section-2__phone span">+79998264523</span>
+            </p>
+            <br>
+            <p>
+                <span class="section-2__job span">Директор</span>: <span class="section-2__supervisor span">Абдрашитов Антон Ришатович</span>
+            </p>
         </div>
         <button id="copy" class="button-copy">Копировать в буфер</button>
     </section>
@@ -88,14 +191,47 @@
         function updateText() {
             const adress = document.getElementById('adress').value;
             const initials = document.getElementById('initials').value;
+            const job = document.getElementById('job').value;
             const email = document.getElementById('email').value;
-            const sectionInitials = document.querySelector('.section-2__initials');
+            const inn = document.getElementById('inn').value;
+            const kpp = document.getElementById('kpp').value;
+            const ogrn = document.getElementById('ogrn').value;
+            const number = document.getElementById('number').value;
+            const nameBank = document.getElementById('name-bank').value;
+            const bik = document.getElementById('bik').value;
+            const check = document.getElementById('check').value;
+            const recipient = document.getElementById('recipient').value;
+            const phone = document.getElementById('phone').value;
+            const supervisor =document.getElementById('supervisor').value;
+            const sectionInitials = document.querySelectorAll('.section-2__initials');
             const sectionAdress = document.querySelector('.section-2__adress');
             const sectionEmail = document.querySelector('.section-2__email');
+            const sectionInn = document.querySelector('.section-2__inn');
+            const sectionKpp = document.querySelector('.section-2__kpp');
+            const sectionOgrn = document.querySelector('.section-2__ogrn');
+            const sectionNumber = document.querySelector('.section-2__number');
+            const sectionNameBank = document.querySelector('.section-2__name-bank');
+            const sectionBik = document.querySelector('.section-2__bik');
+            const sectionCheck = document.querySelector('.section-2__check');
+            const sectionRecipient = document.querySelectorAll('.section-2__recipient');
+            const sectionPhone = document.querySelector('.section-2__phone');
+            const sectionJob = document.querySelectorAll('.section-2__job');
+            const sectionSupervisor = document.querySelectorAll('.section-2__supervisor');
          
-            sectionInitials.textContent = initials;
+            sectionInitials.forEach(item => item.textContent = initials);
             sectionAdress.textContent = adress;
             sectionEmail.textContent = email;
+            sectionInn.textContent = inn;
+            sectionKpp.textContent = kpp;
+            sectionOgrn.textContent = ogrn;
+            sectionNumber.textContent = number;
+            sectionNameBank.textContent = nameBank;
+            sectionBik.textContent = bik;
+            sectionCheck.textContent = check;
+            sectionRecipient.forEach(item => item.textContent = recipient);
+            sectionPhone.textContent = phone;
+            sectionJob.forEach(item => item.textContent = job);
+            sectionSupervisor.forEach(item => item.textContent = supervisor);
         }
 
         btnCopy.addEventListener('click', () => {

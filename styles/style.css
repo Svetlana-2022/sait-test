@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: #eee;
     padding: 40px;
+    font-family: 'Open Sans';
 } 
 h1 {
     font-size: 40px;
@@ -16,13 +17,17 @@ h1 {
     min-inline-size: 5%;
     padding: 8px;
     cursor: pointer;
-} 
+}
+
 input {
-    inline-size: 90%;
+    inline-size: 80%;
     padding: 8px;
 }
-input:first-of-type {
-    inline-size: 85%;
+ul {
+    list-style: none;
+}
+li {
+    margin-block-start: 10px;
 }
 .sample {
     border: solid 2px #eee;
@@ -31,6 +36,11 @@ input:first-of-type {
 .span {
     border-bottom: 1.5px dotted #fa8669;
     background-color: #fcf8e3;
+}
+.section-2__desc {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
 }
 .button-copy {
     margin-top: 20px;
